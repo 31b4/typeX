@@ -6,7 +6,8 @@ body {
     align-items: center;
     height: 100vh;
     margin: 0;
-    background-color: #f0f0f0;
+    background-color: #1e1e1e;
+    color: #ffffff;
     overflow: hidden;
 }
 
@@ -15,10 +16,10 @@ body {
     top: 20px;
     left: 50%;
     transform: translateX(-50%);
-    background-color: #ffffff;
+    background-color: #2d2d2d;
     padding: 15px;
     border-radius: 10px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
     display: flex;
     align-items: center;
     transition: opacity 0.3s ease;
@@ -42,7 +43,7 @@ body {
     position: relative;
     width: 50px;
     height: 24px;
-    background-color: #ccc;
+    background-color: #555;
     border-radius: 12px;
     margin-right: 10px;
     transition: 0.4s;
@@ -55,13 +56,13 @@ body {
     width: 20px;
     left: 2px;
     bottom: 2px;
-    background-color: white;
+    background-color: #ddd;
     border-radius: 50%;
     transition: 0.4s;
 }
 
 input:checked + .slider {
-    background-color: #2196F3;
+    background-color: #4CAF50;
 }
 
 input:checked + .slider:before {
@@ -82,7 +83,7 @@ input:checked + .slider:before {
 .radio-custom {
     width: 20px;
     height: 20px;
-    border: 2px solid #ccc;
+    border: 2px solid #555;
     border-radius: 50%;
     margin-right: 5px;
     display: inline-flex;
@@ -95,7 +96,7 @@ input:checked + .slider:before {
     width: 10px;
     height: 10px;
     border-radius: 50%;
-    background-color: #2196F3;
+    background-color: #4CAF50;
     opacity: 0;
     transition: 0.2s;
 }
@@ -106,9 +107,11 @@ input:checked + .slider:before {
 
 #time-select, #custom-time {
     padding: 5px;
-    border: 1px solid #ccc;
+    border: 1px solid #555;
     border-radius: 5px;
     font-size: 14px;
+    background-color: #2d2d2d;
+    color: #ffffff;
 }
 
 #start-button {
@@ -149,23 +152,23 @@ input:checked + .slider:before {
 }
 
 .correct {
-    color: #aaa;
+    color: #888;
 }
 
 .current {
-    color: #000;
-    background-color: yellow;
+    color: #ffffff;
+    background-color: #4CAF50;
 }
 
 .future {
-    color: #333;
+    color: #bbb;
 }
 
 #stats-panel {
     position: absolute;
     bottom: 20px;
     right: 20px;
-    background-color: rgba(255, 255, 255, 0.8);
+    background-color: rgba(45, 45, 45, 0.8);
     padding: 10px;
     border-radius: 5px;
     font-size: 18px;
@@ -177,14 +180,14 @@ input:checked + .slider:before {
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: rgba(0, 0, 0, 0.7);
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
 .popup-content {
-    background-color: white;
+    background-color: #2d2d2d;
     padding: 20px;
     border-radius: 5px;
     text-align: center;
