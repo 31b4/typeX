@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fast Typing Practice</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="config-panel">
+        <div class="config-group">
+            <label class="toggle">
+                <input type="checkbox" id="random-chars-toggle">
+                <span class="slider"></span>
+                Random characters
+            </label>
+        </div>
+        <div class="config-group">
+            <label class="radio">
+                <input type="radio" name="mode" value="infinite" checked>
+                <span class="radio-custom"></span>
+                Infinite
+            </label>
+            <label class="radio">
+                <input type="radio" name="mode" value="timed">
+                <span class="radio-custom"></span>
+                Timed
+            </label>
+        </div>
+        <div class="config-group">
+            <select id="time-select" disabled>
+                <option value="10">10 seconds</option>
+                <option value="30">30 seconds</option>
+                <option value="60" selected>1 minute</option>
+                <option value="120">2 minutes</option>
+                <option value="custom">Custom</option>
+            </select>
+            <input type="number" id="custom-time" min="1" max="3600" value="60" disabled>
+        </div>
+        <div class="config-group">
+            <button id="start-button">Start</button>
+        </div>
+    </div>
+    <div id="typing-container">
+        <div id="text-display"></div>
+    </div>
+    <div id="stats-panel">
+        <div>WPM: <span id="wpm">0</span></div>
+        <div>CPS: <span id="cps">0.00</span></div>
+        <div id="timer" style="display: none;">Time: <span id="time-left"></span></div>
+    </div>
+    <div id="results-popup" class="popup" style="display: none;">
+        <div class="popup-content">
+            <h2>Time's up!</h2>
+            <p>WPM: <span id="final-wpm"></span></p>
+            <p>CPS: <span id="final-cps"></span></p>
+            <p>Characters typed: <span id="final-chars"></span></p>
+            <button id="close-popup">Close</button>
+        </div>
+    </div>
+    <script src="run.js"></script>
+</body>
+</html>
