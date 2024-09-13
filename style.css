@@ -62,7 +62,7 @@ body {
 }
 
 input:checked + .slider {
-    background-color: #4CAF50;
+    background-color: #753232;
 }
 
 input:checked + .slider:before {
@@ -96,7 +96,7 @@ input:checked + .slider:before {
     width: 10px;
     height: 10px;
     border-radius: 50%;
-    background-color: #4CAF50;
+    background-color: #753232;
     opacity: 0;
     transition: 0.2s;
 }
@@ -115,7 +115,7 @@ input:checked + .slider:before {
 }
 
 #start-button {
-    background-color: #4CAF50;
+    background-color: #753232;
     color: white;
     border: none;
     padding: 10px 20px;
@@ -130,7 +130,7 @@ input:checked + .slider:before {
 }
 
 #start-button:hover {
-    background-color: #45a049;
+    background-color: #753232;
 }
 
 #typing-container {
@@ -157,7 +157,7 @@ input:checked + .slider:before {
 
 .current {
     color: #ffffff;
-    background-color: #4CAF50;
+    background-color: #753232;
 }
 
 .future {
